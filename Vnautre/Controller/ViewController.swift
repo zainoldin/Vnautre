@@ -9,6 +9,7 @@
 import UIKit
 import Cartography
 import CameraManager
+import Hero
 
 class ViewController: UIViewController {
 
@@ -71,7 +72,8 @@ class ViewController: UIViewController {
     }
     
     @objc func openSettings() {
-        self.navigationController?.present(SettingsViewController(), animated: true, completion: nil)
+//        self.navigationController?.present(SettingsViewController(), animated: true, completion: nil)
+        self.hero.replaceViewController(with: SettingsViewController())
     }
 
 }

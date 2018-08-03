@@ -23,7 +23,7 @@ class ParametrsTableViewCell: UITableViewCell {
         let save  = UISwitch(frame: .zero)
         save.setOn(false, animated: true)
         save.tintColor  = .white
-        save.onTintColor = .coral
+        save.onTintColor = .sun
         return save
     }()
     

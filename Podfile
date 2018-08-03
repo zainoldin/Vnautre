@@ -8,4 +8,5 @@ target 'BlackCamera' do
   # Pods for BlackCamera
 	pod 'CameraManager', '~> 4.2'
 	pod 'Cartography'
+   	pod 'Hero'
 end

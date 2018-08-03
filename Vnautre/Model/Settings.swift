@@ -16,9 +16,9 @@ struct Settings {
         self.title = title
         self.description = description
     }
-    static let list: [Settings] = [Settings("Noise", ["No"]),
-                                   Settings("Frame", ["Kodak 400"]),
-                                   Settings("Date", ["current", "90s", "no"]),
+    static let list: [Settings] = [Settings("Noise", ["No","Noise + ", "Noise ++", "Noise +++"]),
+                                   Settings("Frame", ["No" ,"Kodak400", "90s Rounded" , "Black Square", "Kodak100PTX"]),
+                                   Settings("Date", ["current", "90s", "No"]),
                                    Settings("Format", ["dd.mm.yy","mm.dd.yy"])]
 }
 

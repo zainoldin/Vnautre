@@ -8,6 +8,7 @@
 
 import UIKit
 import Cartography
+import Hero
 
 class SettingsViewController: UIViewController, Reusable {
     
@@ -40,6 +41,7 @@ class SettingsViewController: UIViewController, Reusable {
     }
 
     func setupViews() {
+        self.hero.isEnabled = true 
         self.view.backgroundColor = UIColor.backgroundBlack
         self.view.addSubview(tableView)
         self.view.addSubview(closeButton)
@@ -119,7 +121,7 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         case 1:
             let cell = ParametrsTableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: identifier)
-            cell.titleLabel.text = "Save photos on gallery"
+            cell.titleLabel.text = "Change style"
             return cell
         default:
             let cell = SettingsTableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: identifier)
@@ -137,7 +139,7 @@ extension SettingsViewController: UITableViewDelegate, UITableViewDataSource {
         case 0 :
             let vc = ConfigurationViewController()
             vc.configurationList = settingsList[indexPath.row].description
-            self.present(vc, animated: false, completion: nil)
+            self.hero.replaceViewController(with: vc)
         default:
             print("")
         }

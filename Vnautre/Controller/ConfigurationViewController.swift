@@ -39,6 +39,7 @@ class ConfigurationViewController: UIViewController, Reusable {
     }
     
     func setupViews() {
+        hero.isEnabled = true
         self.view.addSubview(tableView)
         self.view.addSubview(closeButton)
     }
@@ -61,7 +62,7 @@ class ConfigurationViewController: UIViewController, Reusable {
     }
     
     @objc func closeButtonPressed() {
-        self.dismiss(animated: false, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     
     
