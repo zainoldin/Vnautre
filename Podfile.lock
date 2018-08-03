@@ -1,0 +1,20 @@
+PODS:
+  - CameraManager (4.2.1)
+  - Cartography (3.0.2)
+
+DEPENDENCIES:
+  - CameraManager (~> 4.2)
+  - Cartography
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CameraManager
+    - Cartography
+
+SPEC CHECKSUMS:
+  CameraManager: 4749629345b651d11c8bc60cc0d5fbea2c61b1ef
+  Cartography: 231190d7d0b3107ce8d67c54189f059a509b3760
+
+PODFILE CHECKSUM: fc8260d1a58a9a3657f002434ca48637c0df9e0f
+
+COCOAPODS: 1.5.0
